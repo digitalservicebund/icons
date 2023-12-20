@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+set -o verbose
+
+original_svg_path="./material-ui/packages/mui-icons-material/material-icons"
+react_dist_path="./dist/react"
+svg_dist_path="./dist/svg"
+
+mkdir --parents $react_dist_path $svg_dist_path
+git clone --depth=1 --branch=master "https://github.com/mui/material-ui.git"
+cp $original_svg_path/*.svg $svg_dist_path
+npx @svgr/cli --no-svgo --no-index --typescript --out-dir $react_dist_path -- $svg_dist_path

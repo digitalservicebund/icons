@@ -3,8 +3,8 @@ name: Release
 # setup the workflow trigger(s) according to your needs
 # see: https://docs.github.com/en/actions/using-workflows/triggering-a-workflow
 on:
-  push:
-    branches: ["main", "alpha", "beta", "next", "next-major"]
+  # push:
+  #  branches: ["main", "alpha", "beta", "next", "next-major"]
   # manual
   workflow_dispatch:
 
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org
-          scope: "@digitalservice4germany"
+          scope: "@digitalservicebund"
       - run: npm ci
       - run: npm run build
       - run: npm test
