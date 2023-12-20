@@ -5,11 +5,29 @@ set -o nounset
 set -o pipefail
 set -o verbose
 
-original_svg_path="./material-ui/packages/mui-icons-material/material-icons"
-react_dist_path="./dist/react"
-svg_dist_path="./dist/svg"
+tmp_path="./tmp"
+react_tmp_path=$tmp_path"/react"
+original_svg_path=$tmp_path"/material-ui/packages/mui-icons-material/material-icons"
+dist_path="./dist/"
 
-mkdir --parents $react_dist_path $svg_dist_path
-git clone --depth=1 --branch=master "https://github.com/mui/material-ui.git"
-cp $original_svg_path/*.svg $svg_dist_path
-npx @svgr/cli --no-svgo --no-index --typescript --out-dir $react_dist_path -- $svg_dist_path
+rm -rf $tmp_path $dist_path
+
+mkdir --parents $react_tmp_path $dist_path
+
+git clone --depth=1 --branch=master "https://github.com/mui/material-ui.git" $tmp_path/material-ui
+
+rm $original_svg_path/screen_search_desktop_24px.svg
+
+for file in $original_svg_path/*_24px.svg; 
+do
+  mv "$file" "${file/_24px/}"
+done
+
+npx @svgr/cli --typescript --no-svgo --out-dir $react_tmp_path -- $original_svg_path
+
+ls $react_tmp_path > files.txt
+
+cd $react_tmp_path
+
+npx tsc --jsx react-jsx --outDir ../../$dist_path --declaration --declarationDir ../../$dist_path @../../files.txt
+
