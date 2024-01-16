@@ -31,7 +31,7 @@
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
     "lefthook": "^1.5.5",
-    "semantic-release": "^22.0.12",
+    "semantic-release": "^23.0.0",
     "typescript": "^5.3.3"
   }
 }
