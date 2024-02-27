@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/digitalservicebund/icons#readme",
   "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
+    "@commitlint/cli": "^19.0.1",
     "@commitlint/config-conventional": "^18.4.3",
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
