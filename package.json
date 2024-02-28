@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/digitalservicebund/icons#readme",
   "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
-    "lefthook": "^1.5.5",
-    "semantic-release": "^23.0.0",
+    "lefthook": "^1.6.4",
+    "semantic-release": "^23.0.2",
     "typescript": "^5.3.3"
   }
 }
