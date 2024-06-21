@@ -23,5 +23,4 @@ const ${variables.componentName} = (${variables.props}) => (
 ${variables.exports};
 `
 }
-
-module.exports = template
+exports.default = template;

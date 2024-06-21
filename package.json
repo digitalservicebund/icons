@@ -2,7 +2,11 @@
   "name": "@digitalservicebund/icons",
   "version": "0.0.0-development",
   "description": "icons",
-  "main": "./index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./": "./"
+  },
   "types": "./index.d.ts",
   "scripts": {
     "build": "./build && cp package.json README.md dist",
@@ -14,6 +18,9 @@
   },
   "keywords": [],
   "author": "Joschka de Cuveland <joschka.decuveland@digitalservice.bund.de>",
+  "contributors": [
+    "Pram Gurusinga <pratama.gurusinga@digitalservice.bund.de>"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -25,6 +32,9 @@
     ]
   },
   "homepage": "https://github.com/digitalservicebund/icons#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
