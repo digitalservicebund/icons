@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **Breaking:** Use ESM instead of CJS module system
-  If you get an error
+
+If you get an error during the typecheck
 
 ```
 error TS2307: Cannot find module ... or its corresponding type declarations.
