@@ -2,6 +2,9 @@
 
 [Google's Material UI icons](https://mui.com/material-ui/material-icons/) re-packaged as a set of **React components** without being dependent on [Emotion](https://emotion.sh/).
 
+## Changelog
+[Please read here](CHANGELOG.md)
+
 ## Installation
 
 ```sh
