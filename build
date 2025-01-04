@@ -23,7 +23,7 @@ do
   mv "$file" "${file/_24px/}"
 done
 
-npx @svgr/cli --index-template index-template.cjs --template component-template.cjs --typescript --no-svgo --svg-props role="graphics-symbol img" --svg-props focusable=false --svg-props aria-hidden=true --out-dir $react_tmp_path -- $original_svg_path
+npx @svgr/cli --index-template index-template.cjs --template component-template.cjs --typescript --no-svgo --svg-props focusable=false --svg-props aria-hidden=true --out-dir $react_tmp_path -- $original_svg_path
 
 ls $react_tmp_path > files.txt
 
