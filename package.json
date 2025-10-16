@@ -22,9 +22,6 @@
     "Pram Gurusinga <pratama.gurusinga@digitalservice.bund.de>"
   ],
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "release": {
     "branches": [
       "main"
@@ -40,7 +37,6 @@
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
     "lefthook": "^1.13.6",
-    "semantic-release": "^25.0.1-beta.1",
     "typescript": "^5.9.3"
   }
 }

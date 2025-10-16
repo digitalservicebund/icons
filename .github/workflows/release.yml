@@ -25,6 +25,6 @@ jobs:
       - run: npm run build
       - run: npm test
       - name: Release
-        run: cd dist && npx semantic-release
+        run: cd dist && npx --package semantic-release@beta semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
