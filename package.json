@@ -36,7 +36,7 @@
     "@commitlint/config-conventional": "^20.0.0",
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
-    "lefthook": "^1.13.6",
+    "lefthook": "^2.0.4",
     "typescript": "^5.9.3"
   }
 }
