@@ -32,11 +32,11 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
     "@mui/icons-material": "*",
     "@svgr/cli": "^8.1.0",
-    "lefthook": "^1.13.6",
+    "lefthook": "^2.1.0",
     "typescript": "^5.9.3"
   }
 }
